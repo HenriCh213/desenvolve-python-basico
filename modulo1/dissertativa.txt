@@ -1,1 +1,11 @@
+Aula 1.2 - Algoritmos
 
+Temos que a regra para identificar as unidades dos múltiplos de 9 é dada da seguinte forma: 9 x n = (n-1)(10-n). Sendo o primeiro fator a unidade de dezena e o segundo a primeira unidade.
+
+Com isso, o exercício pede para multiplicar o primeiro dígito (a dezena) por 10 e somar com o segundo dígito (a unidade): 9 x n = (n-1) x 10 + (10-n).
+
+[R] Considerando a letra "n" como um input, darei o valor de 7 para ela: #Entrada
+
+f(7) = (7-1) x 10 + (10-7) ∴ f(7) = 60 + 3 ∴ f(7) = 63 #Processamento
+
+f(7) = 63 Output #Saída
