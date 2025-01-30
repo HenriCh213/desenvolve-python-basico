@@ -1,6 +1,7 @@
 Aula 1.2 - Algoritmos 
 
-1 - Leia n; n = 7 #Entrada
-2 - f(n) = (n-1) x 10 + (10-n) #Processamento
-3 - Imprima f(n) #Saída
-
+1 - Início
+2 - Leia n; n = 7 #Entrada
+3 - f(n) = (n-1) x 10 + (10-n) #Processamento
+4 - Imprima f(n) #Saída
+5 - Fim
