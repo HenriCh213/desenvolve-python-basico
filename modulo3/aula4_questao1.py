@@ -1,10 +1,8 @@
-numeros = []
+num1 = int(input("Informe um número:\n"))
+num2 = int(input("Informe um número:\n"))
 
-for n in range(2):
-    num = int(input("Informe um número:"))
-    numeros.append(num)
 
-if sum(numeros) % 2 == 0:
+if (num1 + num2) % 2 == 0:
     print("Par")
 else:
     print("Ímpar")
