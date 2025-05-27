@@ -1,28 +1,30 @@
-quantidade1 = int(input("Digite a quantidade de elementos da lista 1: "))
+n1 = int(input("Digite a quantidade de elementos da lista 1: "))
+lista1 = []
 
-lista1 = [int(input(f"Digite os {quantidade1} elementos da lista 1: ")) for n in range(quantidade1)]
+for i in range(n1):
+    elementos1 = int(input(f"Digite os números da lista 1: "))
+    lista1.append(elementos1)
 
-lista1.sort()
-print(lista1)
 
-quantidade2 = int(input("Digite a quantidade de elementos da lista 2: "))
+n2 = int(input("Digite a quantidade de elementos da lista 2: "))
+lista2 = []
 
-lista2 = [int(input(f"Digite os {quantidade1} elementos da lista 2: ")) for n in range(quantidade2)]
+for i in range(n2):
+    elementos2 = int(input(f"Digite os números da lista 1: "))
+    lista2.append(elementos2)
 
-lista2.sort()
-print(lista2)
-
-min1 = min(lista1)
-min2 = min(lista2)
 lista_intercalada = []
+tamanho_minimo = min(len(lista1), len(lista2))
 
-if quantidade1 > quantidade2:
-    for n in lista1:
-        if min1 < min2:
-            lista_intercalada.append(lista1[n])
-            lista1.remove(n)
-        else:
-            lista_intercalada.append(lista2[n])
-            lista2.remove(n)
+for i in range(tamanho_minimo):
+    lista_intercalada.append(lista1[i])
+    lista_intercalada.append(lista2[i])
 
-print(lista_intercalada)
+for elemento in lista1[tamanho_minimo:]:
+    lista_intercalada.append(elemento)
+
+for elemento in lista2[tamanho_minimo:]:
+    lista_intercalada.append(elemento)
+
+
+print("Lista intercalada:", lista_intercalada)
